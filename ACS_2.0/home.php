@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +7,8 @@
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
+  <button class="logout-button" onclick="logout()">Logout</button>
+
   <div class="container swiper">
     <div class="slider-wrapper">
       <div class="card-list">
@@ -28,8 +29,15 @@
           <button class="message-button">Blood Transfusion</button>
           </a>
         </div>
+      </div>
     </div>
   </div>
-  <script src="home.js"></script>
+
+  <script>
+    function logout() {
+      alert("You have been logged out!");
+      window.location.href = "frontend.html"; 
+    }
+  </script>
 </body>
 </html>
